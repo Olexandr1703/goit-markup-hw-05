@@ -938,18 +938,20 @@ button {
   color: var(--our-team-bg);
   font-size: 12px;
   font-style: normal;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.48px;
   width: 264px;
   height: 40px;
+  padding-left: 16px;
   border-radius: 4px;
   outline: transparent;
   border: 1px solid var(--our-team-bg);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .subscribe-btn {
-  color: var(--our-team-bg);
+  min-width: 165px;
   text-align: center;
   font-size: 16px;
   font-style: normal;
@@ -964,6 +966,7 @@ button {
   gap: 16px;
   border-radius: 4px;
   border: none;
+  color: var(--our-team-bg);
   background: var(--logo-accent-cl);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -982,4 +985,5 @@ button {
 }
 
 .subscribe-form-icon {
+  margin-left: 16px;
 }
