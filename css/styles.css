@@ -810,18 +810,17 @@ button {
 }
 .modal-form-field {
   display: block;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
 .modal-form-name {
   display: block;
   font-size: 12px;
-  font-family: Roboto;
-  font-weight: 400;
+  font-style: normal;
   line-height: 1.17;
   letter-spacing: 0.48px;
-  color: var(--clients-borderl);
   margin-bottom: 4px;
+  color: var(--clients-border);
 }
 
 .input-field {
@@ -842,6 +841,7 @@ button {
   height: 40px;
   padding-left: 38px;
   border-radius: 4px;
+  background-color: transparent;
   outline: transparent;
   appearance: none;
   color: var(--main-black-cl);
@@ -881,8 +881,8 @@ button {
   resize: none;
   border-radius: 4px;
   background-color: transparent;
-  color: var(--modal-windov-bg)
-  border: 1px solid var(--modal-windov-bg);
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4)
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -914,12 +914,16 @@ button {
   height: 16px;
   border-radius: 2px;
   border: 1px solid var(--modal-windov-bg);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-form-checkbox:checked{
+  border: none;
+  background-color: var(--title-accent-cl);
+  fill: var(--cloud-cl);
+}
 
-.modal-form-checkbox:checked + .modal-form-field .modal-form-custom-checkbox{
+.modal-form-checkbox:checked + .modal-form-field .modal-form-custom-checkbox {
   background-color: var(--title-accent-cl);
   fill: var(--cloud-cl);
   border: none;
@@ -951,13 +955,6 @@ button {
   margin-bottom: 8px;
 }
 
-.pp-text {
-  color: var(--clients-border);
-  font-size: 12px;
-  font-style: normal;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-}
 /*footer subscribe*/
 
 .subscribe-div {
