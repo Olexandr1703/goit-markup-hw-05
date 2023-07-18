@@ -808,28 +808,23 @@ button {
 }
 .modal-form {
 }
-.modal-form-field {
+/* .modal-form-field {
   display: block;
   margin-bottom: 16px;
-}
+} */
 
 .modal-form-field {
   display: block;
   font-size: 12px;
-  font-family: Roboto;
-  font-weight: 400;
   line-height: 1.17;
   letter-spacing: 0.48px;
   margin-bottom: 8px;
   color: var(--clients-border);
-  color: var(--clients-borderl);
-  margin-bottom: 4px;
-
 }
 
 .modal-form-field:nth-child(4) {
-    margin-bottom: 16px;
-  }
+  margin-bottom: 16px;
+}
 
 .input-field {
   position: relative;
@@ -850,6 +845,7 @@ button {
   padding-left: 38px;
   border-radius: 4px;
   outline: transparent;
+  background-color: transparent;
   appearance: none;
   color: var(--main-black-cl);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -888,8 +884,8 @@ button {
   resize: none;
   border-radius: 4px;
   background-color: transparent;
-  color: var(--modal-windov-bg)
-  border: 1px solid var(--modal-windov-bg);
+  color: rgba(46, 47, 66, 0.4);
+  border: 1px solid rgba(46, 47, 66, 0.4);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -922,11 +918,11 @@ button {
   border-radius: 2px;
   border: 1px solid var(--modal-windov-bg);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.modal-form-checkbox:checked + .modal-form-field .modal-form-custom-checkbox{
+.modal-form-checkbox:checked + .modal-form-field .modal-form-custom-checkbox {
   background-color: var(--title-accent-cl);
   fill: var(--cloud-cl);
   border: none;
