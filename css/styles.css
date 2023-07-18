@@ -818,7 +818,7 @@ button {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.48px;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   color: var(--clients-border);
 }
 
@@ -951,6 +951,7 @@ button {
 }
 
 .modal-form-div {
+  display: block;
   margin-bottom: 8px;
 }
 
