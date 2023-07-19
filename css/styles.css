@@ -918,7 +918,7 @@ button {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  clip-path: inset(100%);
+
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -929,13 +929,12 @@ button {
 }
 
 .modal-form-checkbox:checked + .pp-text .modal-form-custom-checkbox {
-  background-color: #000000;
+  background-color: var(--title-accent-cl);
   border: none;
-  fill: #ffffff;
+  fill: var(--title-accent-cl);
 }
 
 .modal-form-checkbox-icon {
-  opacity: 0;
 }
 
 .modal-form-agreement-desc {
