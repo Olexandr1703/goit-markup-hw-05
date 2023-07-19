@@ -913,6 +913,7 @@ button {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  clip-path: inset(100%);
   width: 16px;
   height: 16px;
   border-radius: 2px;
