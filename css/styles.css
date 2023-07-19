@@ -931,7 +931,7 @@ button {
 .modal-form-checkbox:checked + .pp-text .modal-form-custom-checkbox {
   background-color: var(--title-accent-cl);
   border: none;
-  fill: var(--title-accent-cl);
+  fill: var(--cloud-cl);
 }
 
 .modal-form-checkbox-icon {
